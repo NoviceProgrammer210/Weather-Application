@@ -24,7 +24,7 @@ document.getElementById('getWeatherBtn').addEventListener('click', function() {
             return response.json();
         })
         .then(data => {
-            if (data.cod === 200) {
+            if(data.cod === 200) {
                 // Display weather forecast
                 const forecast = data.daily.map(day => `
                     <div>
